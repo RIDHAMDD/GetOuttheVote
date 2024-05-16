@@ -1,0 +1,187 @@
+/* src/App.css */
+/* App.css */
+
+.section {
+  padding: 20px;
+}
+
+.about-section {
+  background-color: #f9f9f9;
+}
+
+.section1-section {
+  background-color: #fff;
+}
+
+.flashcard-container {
+  display: flex;
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.flashcard {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-right: 10px;
+  min-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flashcard .question {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.flashcard .options button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.flashcard .options button.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.flashcard .explanation {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+.flashcard .explanation button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  padding: 100px 20px;
+  height: 100vh;
+}
+
+.section:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+.section:nth-child(even) {
+  background-color: #fff;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+  background-image: url('./Images/try1.jpeg'); /* Replace with your image path */
+  /* https://unsplash.com/photos/black-and-white-love-print-crew-neck-shirt-ZqsY740eAOo */
+  /* https://unsplash.com/photos/voted-printed-papers-on-white-surface-ls8Kc0P9hAA */
+  background-size: cover;
+  background-position: center;
+  background-attachment: Optional; 
+}
+
+.about-content {
+  background-color: rgba(0, 0, 0, 0.8); /* Translucent background */
+  padding: 20px;
+  margin: 0 20px; /* Margins on the left and right */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better contrast */
+  max-width: 800px; /* Optional: limit the width of the box */
+  text-align: center;
+  color: #fff;
+}
+
+
+.section1-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+  background-image: url('./Images/try2.jpeg'); /* Replace with your image path */
+  /* https://unsplash.com/photos/black-and-white-love-print-crew-neck-shirt-ZqsY740eAOo */
+  /* https://unsplash.com/photos/voted-printed-papers-on-white-surface-ls8Kc0P9hAA */
+  background-size: cover;
+  background-position: center;
+  background-attachment: Optional; 
+}
+
+.section2-section {
+  position: relative;
+  border: 1px solid #b5d1e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  overflow: hidden; /* Ensures the overlay covers the entire section */
+}
+
+.section2-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./Images/try3.jpeg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Makes the image 50% translucent */
+  z-index: 1;
+}
+
+.survey-container {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Ensure text is readable with a semi-transparent background */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.survey-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.survey-button:hover {
+  background-color: #0056b3;
+}
+
+.survey-info {
+  background-color: #ffeeba;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
