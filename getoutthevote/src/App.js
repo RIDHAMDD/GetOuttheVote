@@ -59,21 +59,25 @@ const App = () => {
         </div>
       </section>
 
-      <section id="section2" className="section section2-section">
+      <section id="section2" className={`section section2-section ${surveyCompleted ? 'alert' : ''}`}>
         <h2>Election Survey</h2>
         <div className="survey-container">
           <p>
             Take our survey to share your views on who will win the upcoming elections. 
-            Once you complete the survey, you'll receive important information about fraudulent surveys.
+            Once you complete the survey, you'll see the real stats on who is winning the elections.
           </p>
           <button onClick={handleSurveyClick} className="survey-button">
             Take the Survey
           </button>
           {surveyCompleted && (
             <div className="survey-info">
+              <div className="aware-text">Be Aware</div>
+              <div className="aware-text">Be Aware</div>
+              <div className="aware-text">Be Aware</div>
               <p>
-                Thank you for participating! Please be aware that some online surveys might be fraudulent 
-                and could misuse your information. Always ensure you are participating in credible surveys.
+                Please be aware that some online surveys might be fraudulent 
+                and could misuse your information. Voting preferences is a private 
+                information and one is not entitled to reveal it under any circumstances.
               </p>
             </div>
           )}

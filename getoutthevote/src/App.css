@@ -135,7 +135,7 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;
-  overflow: hidden; /* Ensures the overlay covers the entire section */
+  overflow: hidden;
 }
 
 .section2-section::before {
@@ -184,4 +184,38 @@ body {
   padding: 10px;
   margin-top: 20px;
   text-align: left;
+}
+
+/* Alert styling for Section 2 */
+.alert {
+  animation: blink 1s infinite;
+}
+
+/* Blink animation */
+@keyframes blink {
+  0%, 100% {
+    background-color: red;
+  }
+  50% {
+    background-color: transparent;
+  }
+}
+
+/* Aware text styling */
+.aware-text {
+  font-size: 2em;
+  color: blue;
+  animation: growShrink 2s infinite;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Grow and shrink animation */
+@keyframes growShrink {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
 }
