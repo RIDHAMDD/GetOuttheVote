@@ -34,37 +34,45 @@ const App = () => {
       </section>
 
       <section id="section1" className="section section1-section">
-        <h2>Quiz</h2>
-        <div className="flashcard-container">
-          <FlashCard 
-            question="Is it true that only U.S. citizens can vote in federal elections?" 
-            answer="true"
-            explanation="Yes, only U.S. citizens can vote in federal elections."
-          />
-          <FlashCard 
-            question="Can you vote online in U.S. presidential elections?" 
-            answer="false"
-            explanation="No, you cannot vote online in U.S. presidential elections."
-          />
-          <FlashCard 
-            question="Is it possible to vote by mail in all states?" 
-            answer="mixed"
-            explanation="It's mixed because while all states allow some form of mail voting, the rules vary significantly."
-          />
-          <FlashCard 
-            question="Are you automatically registered to vote when you turn 18?" 
-            answer="false"
-            explanation="No, you need to register to vote when you turn 18, it is not automatic."
-          />
-        </div>
-      </section>
+      
+      <div className="quiz">
+      <h1>Quiz</h1>
+      <div className="flashcard-container">
+        
+        <FlashCard 
+          question="What is one common tactic used in anti-voting content to discourage people from voting?" 
+          options={['Providing accurate information', 'Spreading misinformation', 'Encouraging research']}
+          answer="Spreading misinformation"
+          explanation="Spreading misinformation about voter ID requirements is a common tactic used to discourage people from voting."
+        />
+        <FlashCard 
+          question="Which of the following is a good strategy to identify misleading content online?" 
+          options={['Trusting unverified sources', 'Fact-checking with reputable sources', 'Sharing without verifying']}
+          answer="Fact-checking with reputable sources"
+          explanation="Fact-checking information with reputable sources is a good strategy to identify misleading content online."
+        />
+        <FlashCard 
+          question="Which of the following would be considered a credible source for voting information?" 
+          options={['A random blog post', 'Your state\'s official voting website', 'A social media post']}
+          answer="Your state's official voting website"
+          explanation="Your state's official voting website would be considered a credible source for voting information."
+        />
+        <FlashCard 
+          question="How can understanding local issues motivate you to vote?" 
+          options={['By making you feel disconnected', 'By showing impact on daily life', 'By making the process confusing']}
+          answer="By showing impact on daily life"
+          explanation="Understanding local issues can motivate you to vote by showing how voting directly impacts your daily life."
+        />
+      </div>
+    </div>
+    </section>
 
       <section id="section2" className={`section section2-section ${surveyCompleted ? 'alert' : ''}`}>
         <h2>Election Survey</h2>
         <div className="survey-container">
           <p>
-            Take our survey to share your views on who will win the upcoming elections. 
-            Once you complete the survey, you'll see the real stats on who is winning the elections.
+          Take our exciting survey to share your views on who will win the upcoming 
+          elections! Once you complete the survey, you'll see the real stats on who is leading in the polls.
           </p>
           <button onClick={handleSurveyClick} className="survey-button">
             Take the Survey
@@ -75,9 +83,10 @@ const App = () => {
               <div className="aware-text">Be Aware</div>
               <div className="aware-text">Be Aware</div>
               <p>
-                Please be aware that some online surveys might be fraudulent 
-                and could misuse your information. Voting preferences is a private 
-                information and one is not entitled to reveal it under any circumstances.
+              Please note: Be cautious of random online surveys as they can steal 
+              your personal information and voting preferences. This was a clickbait 
+              tactic to illustrate how easily one can be tricked. Protect your privacy 
+              and be aware of fraudulent surveys.
               </p>
             </div>
           )}

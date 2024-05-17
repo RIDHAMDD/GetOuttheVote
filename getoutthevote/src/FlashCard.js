@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Flashcard.css';
 
-const FlashCard = ({ question, answer, explanation }) => {
+const FlashCard = ({ question, options, answer, explanation }) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
 
@@ -12,19 +12,26 @@ const FlashCard = ({ question, answer, explanation }) => {
 
   const handleCloseExplanation = () => {
     setShowExplanation(false);
+    setSelectedOption(null);
   };
 
   return (
     <div className="flashcard">
       <p className="question">{question}</p>
       <div className="options">
-        <button onClick={() => handleOptionClick('true')} className={selectedOption === 'true' ? 'selected' : ''}>True</button>
-        <button onClick={() => handleOptionClick('false')} className={selectedOption === 'false' ? 'selected' : ''}>False</button>
-        <button onClick={() => handleOptionClick('Not Sure')} className={selectedOption === 'Not Sure' ? 'selected' : ''}>Not Sure</button>
+        {options.map((option, index) => (
+          <button
+            key={index}
+            onClick={() => handleOptionClick(option)}
+            className={selectedOption === option ? 'selected' : ''}
+          >
+            {option}
+          </button>
+        ))}
       </div>
       {showExplanation && (
         <div className="explanation">
-          <p>{selectedOption === answer ? 'Correct!' : 'Find out what is a correct answer'}</p>
+          <p>{selectedOption === answer ? 'Correct!' : 'Incorrect'}</p>
           <p>{explanation}</p>
           <button onClick={handleCloseExplanation}>Close</button>
         </div>
