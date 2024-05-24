@@ -25,12 +25,12 @@ const Navbar = () => {
         </li>
         <li className="nav-item">
           <Link to="section3" smooth={true} duration={500}>
-            Section 3
+          Voter Registration Info
           </Link>
         </li>
         <li className="nav-item">
           <Link to="section4" smooth={true} duration={500}>
-            Section 4
+            Github
           </Link>
         </li>
       </ul>

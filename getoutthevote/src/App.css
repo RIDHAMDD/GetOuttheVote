@@ -230,3 +230,89 @@ body {
     transform: scale(1.5);
   }
 }
+
+/* Section 3 - Voter Registration Info */
+.registration-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./Images/img4.jpg'); /* Replace with your image path */
+  /* https://unsplash.com/photos/black-and-white-love-print-crew-neck-shirt-ZqsY740eAOo */
+  /* https://unsplash.com/photos/voted-printed-papers-on-white-surface-ls8Kc0P9hAA */
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh; /* Full viewport height */
+  background-color: #ffffff; /* Optional: To distinguish the container's background */
+}
+
+.registration-info {
+  background-color: rgba(9, 70, 32, 0.853); /* Translucent background */
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.766);
+  max-width: 800px;
+  text-align: left;
+  color: #fff;
+}
+
+.registration-info h2,
+.registration-info h3 {
+  margin-top: 0;
+}
+
+.registration-info ul {
+  list-style-type: disc;
+  margin: 10px 0 10px 20px;
+  padding: 0;
+}
+
+.registration-info ul li {
+  margin-bottom: 10px;
+}
+
+.register-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+/* Section 4 - GitHub Section */
+.github-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./Images/gitus.jpg'); /* Replace with your image path */
+  /* https://unsplash.com/photos/black-and-white-love-print-crew-neck-shirt-ZqsY740eAOo */
+  /* https://unsplash.com/photos/voted-printed-papers-on-white-surface-ls8Kc0P9hAA */
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh; /* Full viewport height */
+  background-color: #ffffff; /* Optional: To distinguish the container's background */
+}
+
+.github-section {
+  background-color: rgba(131, 118, 8, 0.8); /* Translucent background */
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+  color: #fff;
+}
+
+.github-logo {
+  width: 85px;
+  height: 50px;
+  margin-top: 10px;
+}
