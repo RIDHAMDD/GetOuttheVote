@@ -4,6 +4,7 @@ import './App.css'; // Add global styles here
 import FlashCard from './FlashCard';
 import VoterRegistrationInfo from './VoterRegistrationInfo'; // Import the new component
 import GitHubSection from './GitHubSection';
+
 const App = () => {
   const [surveyCompleted, setSurveyCompleted] = useState(false);
 
@@ -61,6 +62,27 @@ const App = () => {
               explanation="Understanding local issues can motivate you to vote by showing how voting directly impacts your daily life."
             />
           </div>
+        </div>
+      </section>
+
+      <section id="section5" className="section section5-section">
+        <div className="great-hack-connection">
+          <h2>The Connection Between Quiz Questions and "The Great Hack"</h2>
+          <p>
+            The quiz you just took was designed to highlight the key tactics and issues explored in "The Great Hack," a documentary that dives into the misuse of public's data and its impact on democratic processes.
+            </p>
+            <p>
+            The quiz questions focused on:
+          </p>
+          <ul>
+            <li><strong>Anti-Voting Tactics:</strong> In "The Great Hack," misinformation is a powerful tool used to influence and suppress voter turnout.</li>
+            <li><strong>Identifying Misleading Content:</strong> The documentary also emphasized the importance of fact-checking and using credible sources.</li>
+            <li><strong>Credible Voting Information:</strong> Ensuring voters have access to a reliable source of information is very important, like the documentary touched the requirment for transparency and accountability for data usage by the companies collecting them.</li>
+            <li><strong>Understanding Local Issues:</strong> By showing how important the impact of local issues are we can motivate voters to participate in a fair election.</li>
+          </ul>
+          <p>
+            By using these points, we wish users to recognize and combat misinformation, protect their personal data, and actively participate in the democratic process.
+          </p>
         </div>
       </section>
 
